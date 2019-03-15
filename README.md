@@ -25,7 +25,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2. nvm을 통하여 node 설치(npm자동 설치 됨)
 3. yarn 설치(npm 보다 낫다고 함)
 4. react를 별도의 config 없이 시작할 수 있게 제공한 create-react-app 시작
-	cmd에서 create-react-app install(사진)
+
+<br/>
+
+![react](./public/images/cmd-create-react-app.JPG)
+
+<br/>
   
 5. 통합개발툴은 atom 으로
 7. 코딩
