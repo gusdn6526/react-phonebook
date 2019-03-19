@@ -9,11 +9,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <br/>
 
-#### `개발,기술 환경`  
+#### `개발/기술 환경`  
 
-- Windows  
-- React (create-react-app)  
-- Node.js (v11.11.0)  
+- windows  
+- react (create-react-app)  
+- node.js (v11.11.0)  
 - yarn (1.13.0)  
 - atom  
 
@@ -41,7 +41,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <br/>
 
-#### `용어ㅡ개념`    
+#### `용어/개념`    
 
 - webpack이란?
 - babel이란?
