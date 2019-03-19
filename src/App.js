@@ -4,19 +4,41 @@ import './App.css';
 //import MyName from './MyName'
 //import Counter from './Counter'
 import PhoneForm from './components/PhoneForm'
+import PhoneInfoList from './components/PhoneInfoList';
 
 //이렇게, import 를 하는 것은, 우리가 webpack 을 사용하기에 가능한 작업입니다.
 
 class App extends Component {
+  id = 2
+  state = {
+    information: [
+      {
+        id: 0
+        , name: 'Shawn'
+        , phone: '010-123-4567'
+      },
+      {
+        id: 1
+        , name: 'Sumin'
+        , phone: '010-891-0123'
+      }
+    ]
+  }
+
   handleCreate = (data) => {
-    console.log(data);
+    const { information } = this.state;
+    this.setState({
+      information: information.concat({ id: this.id++, ...data })
+    })
   }
   render() {
+    const { information } = this.state;
     return (
       <div>
         <PhoneForm
           onCreate = {this.handleCreate}
         />
+        {JSON.stringify(information)}
       </div>
     );
   }
