@@ -15,7 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React (create-react-app)  
 - Node.js (v11.11.0)  
 - yarn (1.13.0)  
-- Atom  
+- atom  
 
 <br/>
 
@@ -36,6 +36,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 7. start coding!
 
 <br/>
+
+---
+
+<br/>
+
+#### `용어ㅡ개념`    
 
 - webpack이란?
 - babel이란?
