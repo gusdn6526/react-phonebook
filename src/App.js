@@ -31,6 +31,15 @@ class App extends Component {
       information: information.concat({ id: this.id++, ...data })
     })
   }
+
+  handleRemove = (id) => {
+    const { information } = this.state;
+    this.setState({
+      information: information.filter(info => info.id !== id)
+      //배열에는 filter 라는 내장함수가 있는데, 이 함수는 특정 조건에
+      //부합되는 원소들만 뽑아내서 새 배열을 만들어줍니다.
+    })
+  }
   render() {
     const { information } = this.state;
     return (
@@ -38,7 +47,10 @@ class App extends Component {
         <PhoneForm
           onCreate = {this.handleCreate}
         />
-        {JSON.stringify(information)}
+        <PhoneInfoList
+          data={information}
+          onRemove={this.handleRemove}
+        />
       </div>
     );
   }

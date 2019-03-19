@@ -3,12 +3,17 @@ import PhoneInfo from './PhoneInfo';
 
 class PhoneInfoList extends Component {
   static defaultProps = {
-    data: []
+    list: [],
+    onRemove: () => console.warn('onRemove not defined.')
   }
 
   render() {
-    const { data } = this.props;
-    const list = data.map(info => (<PhoneInfo key={info.id} info={info}/>));
+    const { data, onRemove } = this.props;
+    const list = data.map(
+      info => (
+        <PhoneInfo key={info.id} info={info} onRemove={onRemove}/>
+        )
+      );
     return(
       <div>
         {list}
@@ -19,4 +24,4 @@ class PhoneInfoList extends Component {
 
 export default PhoneInfoList;
 
-//꼭 기억해야 할 점은 배열을 렌더링 하게 될 때에는 꼭 고유값을 key 로 사용해야 한다는 것 입니다. 
+//꼭 기억해야 할 점은 배열을 렌더링 하게 될 때에는 꼭 고유값을 key 로 사용해야 한다는 것 입니다.
