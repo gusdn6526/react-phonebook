@@ -43,6 +43,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 #### `용어/개념`    
 
+- react & virtual DOM
 - webpack이란?
 - babel이란?
 - jsx란?
